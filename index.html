@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hormetec</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+    crossorigin="anonymous"
+  />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Anta&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- Comienzo de de Intro -->
+    <div id="intro">
+      <img src="assets/hormetec-logo.png" alt="Intro Image" id="intro-image" />
+    </div>
+    <div id="content" style="display: none">
+      <!-- Fin de Intro -->
+    </div>
+    <!-- Inicio sección Encabezado + Slider -->
+    <nav class="navbar hidden" id="nav">
+      <div class="navbar-logo">
+        <a href="https://hormetec.com">
+          <img src="./assets/hormetec-logo.png" alt="Logo" class="logo" />
+        </a>
+      </div>
+      <div class="navbar-hamburger">
+        <img src="assets/menu.png" alt="Menú" class="hamburger-icon" />
+      </div>
+      <div class="navbar-items">
+        <a href="#nosotros">NOSOTROS</a>
+        <a href="#servicios">SERVICIOS</a>
+        <a href="#productos">PRODUCTOS</a>
+        <a href="#contacto">CONTACTO</a>
+      </div>
+    </nav>
+    <section class="slide row col 12">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/slide1.jpg" class="d-block w-100" alt="slide1" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/slide2.jpg" class="d-block w-100" alt="slide2" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/slide3.png" class="d-block w-100" alt="slide3" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+      <div class="scroll-up-arrow">
+        <a href="#nav">
+          &#9650;
+          <!-- Código Unicode para la flecha hacia arriba -->
+        </a>
+      </div>
+    </div>
+    <!-- Fin sección Encabezado + Slider -->
+
+    <!-- Inicio sección Nosotros -->
+    <div class="section-nosotros" id="nosotros">
+      <h1 class="title-section" data-aos="fade-up">Nosotros</h1>
+      <div class="nosotros-content">
+        <div class="text-section-nosotros" data-aos="fade-right">
+          <p>
+            HORMETEC surge de años de experiencia en la construcción de naves
+            industriales y pisos de hormigón. <br />
+            <br />
+            Le brindamos a nuestros clientes el asesoramiento y las herramientas
+            necesarias para poder concretar sus proyectos. <br />
+            <br />
+            Trabajamos en conjunto con las principales marcas del país y la
+            calidad de sus productos.
+          </p>
+        </div>
+        <div class="img-section-nosotros" data-aos="fade-left">
+          <img src="assets/img-nosotros.jpg" alt="Nosotros" />
+        </div>
+      </div>
+    </div>
+    <!-- Fin sección Nosotros -->
+
+    <!-- Inicio sección Nuestros Servicios -->
+    <div class="section-nuestros-servicios" id="servicios">
+      <h1 class="title-section" data-aos="fade-up">Nuestros Servicios</h1>
+      <div class="nuestros-servicios-content">
+        <div class="bloque" data-aos="flip-left">
+          <img src="assets/servicios1.jpg" alt="Imagen 1" />
+          <p class="info">Pisos de Hormigón</p>
+          <button class="ver-mas-btn">Ver más</button>
+          <div class="modal">
+            <div class="modal-contenido">
+              <span class="cerrar">&times;</span>
+              <p>
+                Se trata de una superficie hecha a base de una mezcla de
+                hormigón y otros componentes como agua y cemento. A esta se le
+                suele agregar minerales o elementos que aumenten su durabilidad.
+                Se caracterizan por ser pisos de gran resistencia y a prueba de
+                cualquier impacto o desgaste.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bloque" data-aos="flip-right">
+          <img src="assets/servicios2.webp" alt="Imagen 2" />
+          <p class="info">Pisos Industriales</p>
+          <button class="ver-mas-btn">Ver más</button>
+          <div class="modal">
+            <div class="modal-contenido">
+              <span class="cerrar">&times;</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                viverra tincidunt libero in vehicula. Nulla facilisi. Maecenas
+                nec efficitur magna. Nam id interdum elit. Donec sollicitudin
+                eget urna non eleifend. Suspendisse non libero ut nisl iaculis
+                convallis. Phasellus at neque vel orci pretium condimentum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bloque" data-aos="flip-left">
+          <img src="assets/servicios3.jpg" alt="Imagen 3" />
+          <p class="info">Naves Industriales</p>
+          <button class="ver-mas-btn">Ver más</button>
+          <div class="modal">
+            <div class="modal-contenido">
+              <span class="cerrar">&times;</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                viverra tincidunt libero in vehicula. Nulla facilisi. Maecenas
+                nec efficitur magna. Nam id interdum elit. Donec sollicitudin
+                eget urna non eleifend. Suspendisse non libero ut nisl iaculis
+                convallis. Phasellus at neque vel orci pretium condimentum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bloque" data-aos="flip-right">
+          <img src="assets/servicios4.jpg" alt="Imagen 4" />
+          <p class="info">Montaje de Estructuras</p>
+          <button class="ver-mas-btn">Ver más</button>
+          <div class="modal">
+            <div class="modal-contenido">
+              <span class="cerrar">&times;</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                viverra tincidunt libero in vehicula. Nulla facilisi. Maecenas
+                nec efficitur magna. Nam id interdum elit. Donec sollicitudin
+                eget urna non eleifend. Suspendisse non libero ut nisl iaculis
+                convallis. Phasellus at neque vel orci pretium condimentum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bloque" data-aos="flip-left">
+          <img src="assets/servicios5.jpg" alt="Imagen 5" />
+          <p class="info">Revestimientos</p>
+          <button class="ver-mas-btn">Ver más</button>
+          <div class="modal">
+            <div class="modal-contenido">
+              <span class="cerrar">&times;</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                viverra tincidunt libero in vehicula. Nulla facilisi. Maecenas
+                nec efficitur magna. Nam id interdum elit. Donec sollicitudin
+                eget urna non eleifend. Suspendisse non libero ut nisl iaculis
+                convallis. Phasellus at neque vel orci pretium condimentum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bloque" data-aos="flip-right">
+          <img src="assets/servicios6.jpg" alt="Imagen 6" />
+          <p class="info">Lavado de Pisos Industriales</p>
+          <button class="ver-mas-btn">Ver más</button>
+          <div class="modal">
+            <div class="modal-contenido">
+              <span class="cerrar">&times;</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                viverra tincidunt libero in vehicula. Nulla facilisi. Maecenas
+                nec efficitur magna. Nam id interdum elit. Donec sollicitudin
+                eget urna non eleifend. Suspendisse non libero ut nisl iaculis
+                convallis. Phasellus at neque vel orci pretium condimentum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bloque" data-aos="flip-left">
+          <img src="assets/servicios7.webp" alt="Imagen 7" />
+          <p class="info">Reparación de Pisos Industriales</p>
+          <button class="ver-mas-btn">Ver más</button>
+          <div class="modal">
+            <div class="modal-contenido">
+              <span class="cerrar">&times;</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                viverra tincidunt libero in vehicula. Nulla facilisi. Maecenas
+                nec efficitur magna. Nam id interdum elit. Donec sollicitudin
+                eget urna non eleifend. Suspendisse non libero ut nisl iaculis
+                convallis. Phasellus at neque vel orci pretium condimentum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin sección Nuestros servicios -->
+
+    <!-- Inicio sección Productos -->
+    <section class="product-section" id="productos">
+      <h1 class="title-section" data-aos="fade-up">Productos</h1>
+      <div class="slider-products">
+        <button class="slider-button prev" onclick="moveSlide(-1)">
+          &#10094;
+        </button>
+        <div class="slider-wrapper">
+          <div class="slider-items">
+            <div class="slider-item">
+              <div class="image-container">
+                <img src="assets/p1.png" alt="Producto 1" />
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="image-container">
+                <img src="assets/p2.png" alt="Producto 2" />
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="image-container">
+                <img src="assets/p3.png" alt="Producto 3" />
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="image-container">
+                <img src="assets/p4.png" alt="Producto 4" />
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="image-container">
+                <img src="assets/p5.png" alt="Producto 5" />
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="image-container">
+                <img src="assets/p6.png" alt="Producto 6" />
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="image-container">
+                <img src="assets/p7.png" alt="Producto 7" />
+              </div>
+            </div>
+            <!-- Agrega más productos aquí -->
+          </div>
+        </div>
+        <button class="slider-button next" onclick="moveSlide(1)">
+          &#10095;
+        </button>
+      </div>
+    </section>
+    <!-- Fin sección Productos -->
+
+    <!-- Inicio sección Contacto -->
+    <section class="contact-section" id="contacto">
+      <h1 class="title-section" data-aos="fade-up">Contacto</h1>
+      <div class="box-contact" data-aos="fade-up">
+        <div class="row-contact">
+          <div class="first-row-contact">
+            <h3>ASESORATE CON NOSOTROS</h3>
+            <p>Envianos tu consulta por Whatsapp</p>
+          </div>
+          <div class="second-row-contact">
+            <button class="button-contact">Escribinos</button>
+          </div>
+        </div>
+      </div>
+      <!-- Inicio sección Formulario -->
+      <div class="form-contact">
+        <h1 class="title-form">ENVIANOS TU CONSULTA</h1>
+        <div class="form-container">
+          <form>
+            <div class="form-group">
+              <label for="name">Nombre y Apellido</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Nombre y Apellido"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject">Asunto</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                placeholder="Asunto"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="Escriba aquí su consulta"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Fin sección Formulario -->
+
+      <!-- Inicio sección Mapa -->
+      <div class="maps" data-aos="zoom-in">
+        <div style="width: 100%">
+          <iframe
+            width="100%"
+            height="400"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=es&amp;q=Av.%20Amancio%20Alcorta%20240,%20Boulogne+(Hormetec)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ><a href="https://www.gps.ie/car-satnav-gps/">Sat Navs</a></iframe
+          >
+        </div>
+      </div>
+      <!-- Fin sección Mapa -->
+    </section>
+    <footer class="footer-section">
+      <div class="row-footer">
+        <div class="first-row-footer">
+          <h4 class="title-footer">Datos de contacto</h4>
+          <div class="footer-date">
+            <div class="footer-date-whatsapp">
+              <img
+                class="icon-footer"
+                src="assets/whatsapp.png"
+                alt="whatsapp"
+              />
+              <p>+54 9 11 3373 4964</p>
+            </div>
+            <div class="footer-email">
+              <img class="icon-footer" src="assets/email.png" alt="email" />
+              <p>
+                compras@hormetec.com <br> ventas@hormetec.com <br> administracion@hormetec.com
+              </p>
+            </div>
+            <div class="footer-date-ubication">
+              <img
+                class="icon-footer"
+                src="assets/ubicacion.png"
+                alt="ubicacion"
+              />
+              <p>Av. Amancio Alcorta 240 - Boulogne</p>
+            </div>
+          </div>
+        </div>
+        <div class="second-row-footer">
+          <div class="footer-image-block">
+            <img
+              class="footer-main-image"
+              src="assets/hormetec-logo.png"
+              alt="footer image"
+            />
+          </div>
+          <div class="footer-icons-block">
+            <img class="footer-icon" src="assets/facebook.png" alt="icon1" />
+            <img class="footer-icon" src="assets/instagram.png" alt="icon2" />
+            <img class="footer-icon" src="assets/x.png" alt="icon3" />
+          </div>
+        </div>
+      </div>
+      <div class="footer-credits">
+        <p>Upward Solutions ™ - Todos los derechos reservados</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="scripts/intro.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/modals.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/sliderProducts.js"></script>
+    <script src="scripts/humburguer-menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
