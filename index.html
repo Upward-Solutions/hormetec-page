@@ -24,7 +24,7 @@
   <body>
     <!-- Comienzo de de Intro -->
     <div id="intro">
-      <img src="assets/hormetec-logo.png" alt="Intro Image" id="intro-image" />
+      <img src="assets/hormetec_logo_intro.png" alt="Intro Image" id="intro-image" />
     </div>
     <div id="content" style="display: none">
       <!-- Fin de Intro -->
@@ -121,7 +121,7 @@
             Nuestros Servicios
         </h1>
         <div class="nuestros-servicios-content">
-            <div class="bloque">
+            <div class="bloque" data-aos="flip-left">
                 <img src="assets/servicios1.jpg" alt="Imagen 1">
                 <p class="info">Pisos de Hormigón</p>
                 <button class="ver-mas-btn">Ver más</button>
@@ -132,7 +132,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bloque">
+            <div class="bloque" data-aos="flip-right">
                 <img src="assets/servicios2.webp" alt="Imagen 2">
                 <p class="info">Pisos Industriales</p>
                 <button class="ver-mas-btn">Ver más</button>
@@ -143,7 +143,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bloque">
+            <div class="bloque" data-aos="flip-left">
                 <img src="assets/servicios3.jpg" alt="Imagen 3">
                 <p class="info">Naves Industriales</p>
                 <button class="ver-mas-btn">Ver más</button>
@@ -154,7 +154,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bloque">
+            <div class="bloque" data-aos="flip-right">
                 <img src="assets/servicios4.jpg" alt="Imagen 4">
                 <p class="info">Montaje de Estructuras</p>
                 <button class="ver-mas-btn">Ver más</button>
@@ -165,7 +165,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bloque">
+            <div class="bloque" data-aos="flip-left">
                 <img src="assets/servicios5.jpg" alt="Imagen 5">
                 <p class="info">Revestimientos</p>
                 <button class="ver-mas-btn">Ver más</button>
@@ -176,7 +176,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bloque">
+            <div class="bloque" data-aos="flip-right">
                 <img src="assets/servicios6.jpg" alt="Imagen 6">
                 <p class="info">Lavado de Pisos Industriales</p>
                 <button class="ver-mas-btn">Ver más</button>
@@ -187,7 +187,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bloque">
+            <div class="bloque" data-aos="flip-left">
                 <img src="assets/servicios7.webp" alt="Imagen 7">
                 <p class="info">Reparación de Pisos Industriales</p>
                 <button class="ver-mas-btn">Ver más</button>
@@ -325,18 +325,7 @@
 
       <!-- Inicio sección Mapa -->
       <div class="maps" data-aos="zoom-in">
-        <div style="width: 100%">
-          <iframe
-            width="100%"
-            height="400"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-            src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=es&amp;q=Av.%20Amancio%20Alcorta%20240,%20Boulogne+(Hormetec)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-            ><a href="https://www.gps.ie/car-satnav-gps/">Sat Navs</a></iframe
-          >
-        </div>
+        <p><iframe id="map-canvas" class="map_part" width="100%"  height="400"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=Amancio Alacorta 240 - Boulogne&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">Powered by <a href="https://www.googlemapsgenerator.com">how to embed google maps</a> and <a href="https://evfactory.se/produkt/defa-power-22kw/">defa power</a></iframe></p>
       </div>
       <!-- Fin sección Mapa -->
     </section>
@@ -360,11 +349,7 @@
               </p>
             </div>
             <div class="footer-date-ubication">
-              <img
-                class="icon-footer"
-                src="assets/ubicacion.png"
-                alt="ubicacion"
-              />
+              <img class="icon-footer" src="assets/ubicacion.png" alt="ubicacion" />
               <p>Av. Amancio Alcorta 240 - Boulogne</p>
             </div>
           </div>
@@ -377,17 +362,18 @@
               alt="footer image"
             />
           </div>
-          <div class="footer-icons-block">
-            <img class="footer-icon" src="assets/facebook.png" alt="icon1" />
-            <img class="footer-icon" src="assets/instagram.png" alt="icon2" />
-            <img class="footer-icon" src="assets/x.png" alt="icon3" />
-          </div>
         </div>
+      </div>
+      <div class="footer-icons-block">
+        <img class="footer-icon" src="assets/facebook.png" alt="icon1" />
+        <img class="footer-icon" src="assets/instagram.png" alt="icon2" />
+        <img class="footer-icon" src="assets/x.png" alt="icon3" />
       </div>
       <div class="footer-credits">
         <p>Upward Solutions ™ - Todos los derechos reservados</p>
       </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="scripts/intro.js"></script>
     <script src="scripts/slider.js"></script>
