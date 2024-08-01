@@ -268,14 +268,14 @@ body {
 }
 
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Fijado a la pantalla completa */
+  z-index: 1000; /* Asegura que el modal esté encima de otros elementos */
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
   justify-content: center;
   align-items: center;
 }
@@ -284,13 +284,13 @@ body {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  width: 50%; /* Ajusta el ancho según sea necesario */
-  max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
-  height: auto; /* Deja que la altura se ajuste automáticamente */
-  max-height: 80%; /* Asegura que el modal no sea demasiado alto */
+  width: 80%; /* Ajusta el ancho para que sea responsivo */
+  max-width: 600px; /* Máximo ancho */
+  height: auto; /* Ajuste automático de altura */
+  max-height: 100%; /* Máximo altura */
   text-align: center;
   position: relative;
-  overflow-y: auto; /* Permite desplazarse si el contenido es demasiado largo */
+  overflow-y: auto; /* Desplazamiento si el contenido es muy largo */
 }
 
 .cerrar {
@@ -300,6 +300,7 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
+
 
 .product-section {
   line-height: 1.6;
@@ -911,61 +912,75 @@ body {
 @media (min-width: 481px) and (max-width: 767px) {
   /* Estilos para dispositivos móviles con un ancho entre 481px y 767px */
   .navbar-items {
-    display: block;
+    display: none;
     flex-direction: column;
     background-color: #403f3f;
+    width: 100%;
     position: absolute;
-    top: 40px; /* Ajusta según la altura de tu navbar */
+    top: 100%;
     left: 0;
-    right: 0;
-    padding: 1rem;
-    margin: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .navbar-hamburger {
-    display: flex;
-  }
-
-  .navbar-hamburger img {
-    width: 20px; /* Ajusta según tu necesidad */
-    height: 20px; /* Ajusta según tu necesidad */
-    transition: transform 0.3s ease;
+    display: block;
+    z-index: 3000; /* Asegura que el botón esté encima del menú */
   }
 
   .navbar-items.active {
     display: flex;
   }
 
-  .hidden {
-    display: none;
+  .navbar-items a {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
   }
 
-  .navbar-logo {
-    display: none;
+  .hamburger-icon {
+    margin-left: 1.5rem; /* Añade un margen en el lado izquierdo */
   }
 
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    width: auto; /* Ajusta automáticamente según el contenido */
-    height: auto; /* Ajusta la altura automáticamente para adaptarse al contenido */
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-    top: 50%; /* Centra el modal verticalmente */
-    left: 50%; /* Centra el modal horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta la posición para centrar */
+  .nosotros-content {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 
-  .modal-contenido {
-    background-color: white;
-    padding: 20px; /* Aumenta el relleno para que el contenido se vea mejor */
-    border-radius: 8px;
-    width: 500px; /* Ajusta el ancho del contenido según tus necesidades */
-    height: auto;
-    position: relative;
+  .img-section-nosotros {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .box-contact {
+    width: 100%;
+    text-align: center;
+  }
+
+  .row-contact {
+    display: block;
+    padding: 20px;
+  }
+
+  .first-row-contact,
+  .second-row-contact {
+    display: block;
+    width: 100%;
+  }
+
+  .first-row-contact h3 {
+    white-space: nowrap;
+    font-size: x-large;
+    text-align: center;
+  }
+
+  .first-row-contact p {
+    white-space: nowrap;
+    font-size: large;
+    text-align: center;
+  }
+
+  .second-row-contact {
+    display: block;
   }
 }
 
@@ -989,7 +1004,7 @@ body {
   }
 
   .slider-item {
-    width: 80%; /* Asegura que cada item ocupe el ancho completo */
+    width: 100%; /* Asegura que cada item ocupe el ancho completo */
     margin: 10px; /* Espacio entre los items */
   }
 
@@ -1123,12 +1138,9 @@ body {
     gap: 1rem;
   }
 
-  .navbar-hamburger {
-    display: none;
-    cursor: pointer;
-  }
 
   .hamburger-icon {
+    display: none;
     width: 30px;
     height: 30px;
   }
@@ -1462,8 +1474,8 @@ body {
     display: block;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 20px;
+    margin-bottom: 200px;
+
   }
 
   .title-form {
@@ -1529,12 +1541,6 @@ body {
 
   .form-group button:hover {
     background-color: #403f3f;
-  }
-
-  .maps {
-    margin: auto;
-    width: 100%;
-    height: 400;
   }
 
   .footer-section {
@@ -1985,20 +1991,20 @@ body {
     margin: 1vh;
     padding: 5vh;
   }
-
+  
   .box-contact {
     background: black;
     padding: 5px 30px;
     width: 100%;
     border-radius: 20px;
   }
-
+  
   .row-contact {
     display: flex;
     justify-content: space-between;
     align-items: center; /* Alinea verticalmente el contenido si es necesario */
   }
-
+  
   .first-row-contact {
     position: relative;
     width: 100%;
@@ -2008,26 +2014,26 @@ body {
     color: #f2f2f2;
     text-align: left;
   }
-
+  
   .first-row-contact h3 {
     font-family: "Anta", sans-serif;
     font-weight: 400;
     font-size: xxx-large;
     font-style: normal;
   }
-
+  
   .first-row-contact p {
     font-family: "Work Sans", sans-serif;
     font-weight: 600;
     font-size: x-large;
     font-style: initial;
   }
-
+  
   .second-row-contact {
     display: flex;
     align-items: center; /* Alinea verticalmente el botón si es necesario */
   }
-
+  
   .button-contact {
     padding: 10px 80px; /* Tamaño alargado del botón */
     font-size: 20px;
@@ -2039,24 +2045,20 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
     font-family: "Work Sans", sans-serif;
   }
-
+  
   .button-contact:hover {
     background-color: #f2f2f2; /* Cambia el color de fondo cuando el botón está en hover */
     color: black;
-    transform: scale(
-      1.05
-    ); /* Aumenta ligeramente el tamaño del botón en hover */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón en hover */
   }
-
+  
   .form-contact {
     text-align: center;
     display: block;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 20px;
   }
-
+  
   .title-form {
     font-family: "Anta", sans-serif;
     font-weight: 400;
@@ -2064,10 +2066,10 @@ body {
     font-style: normal;
     padding: 45px 20px;
   }
-
+  
   .form-container {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     background-color: #ffffff;
     justify-content: center;
@@ -2075,25 +2077,26 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 85%;
+    max-width: 100%;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 200px; /* Reduce el margen inferior para acercar el mapa */
   }
-
+  
   .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
-
+  
   .form-group label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     font-weight: bold;
   }
-
+  
   .form-group input,
   .form-group textarea {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -2101,12 +2104,12 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
   }
-
+  
   .form-group input::placeholder,
   .form-group textarea::placeholder {
     color: #888;
   }
-
+  
   .form-group button {
     width: 25%;
     padding: 10px;
@@ -2117,16 +2120,16 @@ body {
     font-size: 16px;
     cursor: pointer;
   }
-
+  
   .form-group button:hover {
     background-color: #403f3f;
   }
-
+  
   .maps {
-    margin: 50px auto;
-    height: 100%;
-    width: 80%;
+    width: 100%;
+    
   }
+  
 
   .footer-section {
     background-color: #403f3f;
