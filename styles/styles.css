@@ -158,16 +158,14 @@ body {
   font-size: 80px;
   color: black;
   margin-bottom: 60px;
+  text-align: center; /* Asegura que ambos estén centrados */
 }
 
 .section-nosotros {
-  line-height: 1.6;
   display: block;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100%;
-  margin: 1vh;
-  padding: 10vh;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra verticalmente el contenido */
+  padding: 10vh 0; /* Ajusta el padding verticalmente */
 }
 
 .text-section-nosotros {
@@ -519,6 +517,11 @@ body {
   background-color: #403f3f;
 }
 
+.maps{
+  margin-top: 250px;
+  display: block;
+}
+
 .footer-section {
   background-color: #403f3f;
   padding: 10px;
@@ -751,11 +754,6 @@ body {
     font-size: x-large;
   }
 
-  .navbar-hamburger img.active {
-    content: url("assets/menu-close.png"); /* La imagen de la "X" */
-    transform: rotate(180deg); /* Rotación opcional para un efecto visual */
-  }
-
   .contact-section {
     padding: 2vh 1vh; /* Reduce el padding */
   }
@@ -820,6 +818,11 @@ body {
     width: 100%; /* Asegura que el botón ocupe todo el ancho */
     padding: 10px; /* Ajusta el padding */
     font-size: 16px; /* Ajusta el tamaño de la fuente */
+  }
+
+  .maps{
+    margin-top: 50px;
+    display: block;
   }
 
   .footer-section {
@@ -937,8 +940,16 @@ body {
   }
 
   .hamburger-icon {
-    margin-left: 1.5rem; /* Añade un margen en el lado izquierdo */
+    width: 35px;
+    height: 35px;
+    margin-right: 1rem;
   }
+
+  .navbar-hamburger img.active {
+    content: url("assets/menu-close.png"); /* La imagen de la "X" */
+    transform: rotate(180deg); /* Rotación opcional para un efecto visual */
+  }
+
 
   .nosotros-content {
     display: block;
@@ -980,6 +991,11 @@ body {
   }
 
   .second-row-contact {
+    display: block;
+  }
+
+  .maps{
+    margin-top: 100px;
     display: block;
   }
 }
@@ -1037,6 +1053,11 @@ body {
   }
 
   .second-row-contact {
+    display: block;
+  }
+
+  .maps{
+    margin-top: 200px;
     display: block;
   }
 
