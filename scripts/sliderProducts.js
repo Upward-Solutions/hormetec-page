@@ -1,5 +1,5 @@
 let index = 0; // Índice de la página actual
-const itemsToShow = 3; // Número de elementos visibles en el slider
+const itemsToShow = 2; // Número de elementos visibles en el slider
 
 // Función para verificar si estamos dentro del rango de la media query
 function isMobileView() {
