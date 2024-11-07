@@ -553,6 +553,7 @@ body {
   padding: 10px 80px; /* Tamaño alargado del botón */
   font-size: 20px;
   cursor: pointer;
+  text-decoration: none;
   border: 2px solid white; /* Borde del botón (puedes cambiar el color del borde) */
   border-radius: 8px; /* Bordes redondeados */
   background-color: transparent; /* Fondo transparente */
