@@ -968,6 +968,7 @@ body {
     width: 100%; /* Asegura que el botón ocupe todo el ancho */
     padding: 10px; /* Ajusta el padding */
     font-size: 18px; /* Ajusta el tamaño de la fuente */
+    text-align: center;
   }
 
   .form-contact {
