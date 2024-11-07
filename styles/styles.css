@@ -203,8 +203,8 @@ body {
 
 .nuestros-servicios-content {
   display: flex;
-  gap: 25px; /* Espacio entre las imágenes */
-  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 100px; /* Espacio entre las imágenes */
+  justify-content: space-between; /* Centra los elementos horizontalmente */
   align-items: center; /* Alinea los bloques en la parte superior */
   max-width: 1920px; /* Ancho máximo para el contenido */
 }
@@ -819,8 +819,8 @@ body {
     font-size: 1rem;
     text-align: center;
     margin-top: -15px;
-    width: 100%; /* Ajusta el ancho para que se ajuste al contenedor */
-    box-sizing: border-box; /* Incluye padding en el ancho total */ /* Espacio entre el texto y la imagen */
+    width: 100%; 
+    box-sizing: border-box; 
   }
 
   .img-section-nosotros img {
@@ -834,7 +834,7 @@ body {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Espacio entre los bloques */
+    gap: 20px;
   }
 
   .bloque {
@@ -1657,7 +1657,7 @@ body {
   .nuestros-servicios-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 2px; /* Espacio entre las imágenes */
+    gap: 20px;
   }
 
   .bloque {
@@ -2240,9 +2240,13 @@ body {
 
   .nuestros-servicios-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 2px; /* Espacio entre las imágenes */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 80px;
+    justify-content: center;
+    max-width: 1400px; /* Ancho máximo del grid */
+    margin: 0 auto; /* Centra el grid horizontalmente */
   }
+  
 
   .bloque {
     flex: 1 1 300px; /* Distribución flexible: flex-grow, flex-shrink, flex-basis */
