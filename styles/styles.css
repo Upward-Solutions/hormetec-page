@@ -871,10 +871,25 @@ body {
     max-width: 320px;
     padding: 15px;
     margin: 0 auto;
+    background-color: white; /* Fondo blanco */
+    border-radius: 5px;       /* Bordes redondeados para un diseño más suave */
   }
 
   .cerrar {
     font-size: 24px;
+    color: white; /* Color blanco para el texto */
+    background-color: #595859; /* Fondo rojo para hacerlo más visible */
+    border: none;             /* Sin borde */
+    padding: 8px 12px;        /* Espaciado interno para darle más área de clic */
+    cursor: pointer;         /* Cambiar el cursor al pasar por encima */
+    border-radius: 50%;       /* Hacerlo redondeado */
+    position: absolute;       /* Posicionarlo en la esquina superior derecha */
+    top: 10px;
+    right: 10px;
+  }
+
+  .cerrar:focus {
+    outline: none; /* Eliminar el borde de enfoque */
   }
 
   .slider-products {
