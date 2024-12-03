@@ -119,7 +119,7 @@ body {
 .scroll-up-arrow {
   position: fixed;
   bottom: 40px; /* Ajusta la distancia desde la parte inferior */
-  right: 30px; /* Ajusta la distancia desde la parte derecha */
+  left: 50%; /* Centrado horizontalmente */
   background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
   color: white; /* Color de la flecha */
   border-radius: 50%; /* Redondear el fondo */
@@ -130,7 +130,7 @@ body {
   justify-content: center;
   font-size: 1.5rem; /* Tamaño de la flecha */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto de profundidad */
-  transition: background-color 0.3s, transform 0.3s; /* Transiciones para hover */
+  transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s; /* Transiciones más rápidas */
   z-index: 10000; /* Asegura que esté por delante de todo */
 }
 .scroll-up-arrow a {
@@ -138,9 +138,30 @@ body {
   text-decoration: none;
 }
 .scroll-up-arrow:hover {
-  background-color: rgba(0, 0, 0, 0.9); /* Fondo más oscuro en hover */
-  transform: scale(1.1); /* Aumento de tamaño en hover */
+  background-color: rgba(0, 0, 0, 0.8); /* Cambio mínimo en el color del fondo */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25); /* Cambio sutil en la sombra */
 }
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+  right: 20px; /* Ajusta la distancia desde la parte derecha */
+  z-index: 10000; /* Asegura que esté por encima de otros elementos */
+  width: 60px; /* Tamaño inicial del ícono */
+  height: 60px; /* Tamaño inicial del ícono */
+  cursor: pointer; /* Muestra el cursor de clic */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+.whatsapp-icon img {
+  width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Elimina espacios blancos alrededor de la imagen */
+}
+.whatsapp-icon:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra sutil */
+}
+
 
 .nosotros-content {
   display: flex;
@@ -1062,31 +1083,8 @@ body {
     padding: 10px; /* Ajusta el padding */
   }
 
-  /* Estilo para la flecha hacia arriba */
-  .scroll-up-arrow {
-    position: fixed;
-    bottom: 40px; /* Ajusta la distancia desde la parte inferior */
-    right: 30px; /* Ajusta la distancia desde la parte derecha */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
-    color: white; /* Color de la flecha */
-    border-radius: 50%; /* Redondear el fondo */
-    width: 50px; /* Ancho del contenedor */
-    height: 50px; /* Altura del contenedor */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem; /* Tamaño de la flecha */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto de profundidad */
-    transition: background-color 0.3s, transform 0.3s; /* Transiciones para hover */
-    z-index: 10000; /* Asegura que esté por delante de todo */
-  }
-  .scroll-up-arrow a {
-    color: inherit;
-    text-decoration: none;
-  }
-  .scroll-up-arrow:hover {
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo más oscuro en hover */
-    transform: scale(1.1); /* Aumento de tamaño en hover */
+  .scroll-up-arrow{
+    display: none;
   }
 }
 
@@ -1595,7 +1593,7 @@ body {
 
   .scroll-up-arrow:hover {
     background-color: rgba(0, 0, 0, 0.9);
-    transform: scale(1.1);
+    transform: scale(0.1);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Mayor sombra en hover */
   }
 
@@ -1603,7 +1601,7 @@ body {
   .button-contact:hover {
     background-color: #f2f2f2;
     color: black;
-    transform: scale(1.05);
+    transform: scale(0.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agregar sombra en hover */
   }
 
