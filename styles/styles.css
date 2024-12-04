@@ -493,8 +493,8 @@ body {
 
 .card {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 300px; /* Ancho ajustado */
+  height: auto; /* Altura ajustada automáticamente */
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -503,9 +503,28 @@ body {
 
 .card img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
   transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card-content {
+  padding: 10px 15px;
+  background-color: white;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
 }
 
 .card:hover {
@@ -770,8 +789,13 @@ body {
   }
 
   .navbar {
-    position: relative; /* Contexto de apilamiento relativo */
-    z-index: 1000; /* Asegúrate de que esté por encima del slider */
+    position: fixed; /* Fija el navbar en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    z-index: 1000; /* Garantiza que esté por encima del contenido */
+    background-color: #403f3f; /* Fondo para mejorar la visibilidad */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
   }
 
   .navbar-logo {
@@ -789,6 +813,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para destacar el menú */
     overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es largo */
     text-align: center;
+    top: 50px; /* Ajusta este valor según la altura del navbar */
   }
 
   .navbar-items.active {
@@ -1585,18 +1610,6 @@ body {
     height: 30px;
   }
 
-  /* Estilo para la flecha hacia arriba */
-  /* Para la flecha hacia arriba */
-  .scroll-up-arrow {
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  }
-
-  .scroll-up-arrow:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-    transform: scale(0.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Mayor sombra en hover */
-  }
-
   /* Para el botón del contacto */
   .button-contact:hover {
     background-color: #f2f2f2;
@@ -2171,18 +2184,6 @@ body {
   .hamburger-icon {
     width: 30px;
     height: 30px;
-  }
-
-  /* Estilo para la flecha hacia arriba */
-  /* Para la flecha hacia arriba */
-  .scroll-up-arrow {
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  }
-
-  .scroll-up-arrow:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Mayor sombra en hover */
   }
 
   /* Para el botón del contacto */
