@@ -130,7 +130,7 @@ body {
   justify-content: center;
   font-size: 1.5rem; /* Tamaño de la flecha */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto de profundidad */
-  transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s; /* Transiciones más rápidas */
+  transition: background-color 0.2s, transform 1.1s, box-shadow 0.2s; /* Transiciones más rápidas */
   z-index: 10000; /* Asegura que esté por delante de todo */
 }
 .scroll-up-arrow a {
@@ -216,6 +216,7 @@ body {
 .section-nuestros-servicios {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   max-width: 100%;
   padding: 10vh 10px;
