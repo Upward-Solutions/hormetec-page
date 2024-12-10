@@ -24,4 +24,5 @@ jobs:
         exclude: |
           **/.git*
           **/.git*/**
+          **/.github*/**
           *.md
