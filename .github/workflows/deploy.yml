@@ -22,5 +22,6 @@ jobs:
         local-dir: ./
         server-dir: /public_html/
         exclude: |
-          .git*
+          **/.git*
+          **/.git*/**
           *.md
