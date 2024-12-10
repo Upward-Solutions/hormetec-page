@@ -34,7 +34,7 @@ Le brindamos a nuestros clientes el asesoramiento y las herramientas necesarias 
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://hormetec.com.ar" />
+<meta property="og:url" content="https://hormetec.com" />
 <meta property="og:title" content="Hormetec | Obras, proyectos y construcción" />
 <meta property="og:description" content="HORMETEC surge de años de experiencia en la construcción de naves industriales y pisos de hormigón.
 
@@ -42,11 +42,11 @@ Le brindamos a nuestros clientes el asesoramiento y las herramientas
 necesarias para poder concretar sus proyectos.
 
 Le brindamos a nuestros clientes el asesoramiento y las herramientas necesarias para poder concretar sus proyectos." />
-<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+<meta property="og:image" content="assets/hormetec_logo_intro.png" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://hormetec.com.ar" />
+<meta property="twitter:url" content="https://hormetec.com" />
 <meta property="twitter:title" content="Hormetec | Obras, proyectos y construcción" />
 <meta property="twitter:description" content="HORMETEC surge de años de experiencia en la construcción de naves industriales y pisos de hormigón.
 
@@ -54,9 +54,7 @@ Le brindamos a nuestros clientes el asesoramiento y las herramientas
 necesarias para poder concretar sus proyectos.
 
 Le brindamos a nuestros clientes el asesoramiento y las herramientas necesarias para poder concretar sus proyectos." />
-<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
-
-<!-- Meta Tags Generated with https://metatags.io -->
+<meta property="twitter:image" content="assets/hormetec_logo_intro.png" />
 
 
   </head>
@@ -128,7 +126,7 @@ Le brindamos a nuestros clientes el asesoramiento y las herramientas necesarias 
       </a>
     </div>
     <div class="whatsapp-icon hidden">
-      <a href="https://wa.link/nhkzna" target="_blank">
+      <a href="https://wa.link/izdao8" target="_blank">
         <img src="./assets/whatsapp-web.png" alt="WhatsApp" />
       </a>
     </div>
@@ -411,7 +409,7 @@ Le brindamos a nuestros clientes el asesoramiento y las herramientas necesarias 
             <p>Envianos tu consulta por Whatsapp</p>
           </div>
           <div class="second-row-contact">
-            <a href="https://wa.link/nhkzna" class="button-contact" target="_blank">Escribinos</a>
+            <a href="https://wa.link/izdao8" class="button-contact" target="_blank">Escribinos</a>
           </div>
         </div>
       </div>
@@ -426,7 +424,6 @@ Le brindamos a nuestros clientes el asesoramiento y las herramientas necesarias 
                 type="text"
                 id="name"
                 name="name"
-                required
                 placeholder="Nombre y Apellido"
               />
             </div>
@@ -436,7 +433,6 @@ Le brindamos a nuestros clientes el asesoramiento y las herramientas necesarias 
                 type="email"
                 id="email"
                 name="email"
-                required
                 placeholder="Email"
               />
             </div>
@@ -446,7 +442,6 @@ Le brindamos a nuestros clientes el asesoramiento y las herramientas necesarias 
                 type="text"
                 id="subject"
                 name="subject"
-                required
                 placeholder="Asunto"
               />
             </div>
@@ -456,12 +451,12 @@ Le brindamos a nuestros clientes el asesoramiento y las herramientas necesarias 
                 id="message"
                 name="message"
                 rows="5"
-                required
                 placeholder="Escriba aquí su consulta"
               ></textarea>
             </div>
+            <p id="message-error" style="display: none; color: red;"></p>
             <div class="form-group">
-              <button type="submit">Enviar</button>
+              <button type="button" id="contact-form-send">Enviar</button>
             </div>
           </form>
         </div>
@@ -480,7 +475,7 @@ Le brindamos a nuestros clientes el asesoramiento y las herramientas necesarias 
           <h4 class="title-footer">Datos de contacto</h4>
           <div class="footer-date">
             <div class="footer-date-whatsapp">
-              <a href="https://wa.link/nhkzna" target="_blank">
+              <a href="https://wa.link/izdao8" target="_blank">
               <img
                 class="icon-footer"
                 src="assets/whatsapp.png"
@@ -530,6 +525,7 @@ Le brindamos a nuestros clientes el asesoramiento y las herramientas necesarias 
     <script src="scripts/slider.js"></script>
     <script src="scripts/modals.js"></script>
     <script src="scripts/scroll.js"></script>
+    <script src="scripts/send-mail.js"></script>
     <script src="scripts/sliderProducts.js"></script>
     <script src="scripts/humburguer-menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
