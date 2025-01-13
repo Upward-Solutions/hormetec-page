@@ -242,7 +242,7 @@ body {
   position: relative;
   background-color: #fff; /* Fondo blanco para cada bloque */
   border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .bloque img {
@@ -615,8 +615,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: auto;
-  margin-bottom: 100px;
+  margin: auto auto 100px;
 }
 
 .title-form {
@@ -714,14 +713,9 @@ body {
   gap: 10px;
 }
 
-.first-row-footer {
-  padding: auto;
-}
-
 .second-row-footer {
   align-items: center;
   justify-content: center;
-  align-items: center;
 }
 
 .footer-date-whatsapp {
@@ -806,7 +800,6 @@ body {
   .navbar-items {
     display: none; /* Oculto por defecto */
     position: fixed; /* Cambia a fixed para que esté sobre el contenido */
-    top: 80px; /* Ajusta según la altura de tu navbar */
     right: 0;
     background-color: #403f3f;
     width: 100%;
@@ -1208,7 +1201,7 @@ body {
   .product-item {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
     display: flex;
@@ -1370,7 +1363,7 @@ body {
     position: relative;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px; /* Espacio entre los bloques */
   }
 

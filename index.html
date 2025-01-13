@@ -1,536 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Hormetec</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="icon" href="./assets/favicon-hormetec.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/styles.css"/>
+    <link rel="icon" href="./assets/favicon-hormetec.png" type="image/x-icon"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-    crossorigin="anonymous"
-  />
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+            crossorigin="anonymous"
+    />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Anta&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Anta&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
     </style>
-    
-<!-- Primary Meta Tags -->
-<title>Hormetec | Obras, proyectos y construcción</title>
-<meta name="title" content="Hormetec | Obras, proyectos y construcción" />
-<meta name="description" content="HORMETEC surge de años de experiencia en la construcción de naves industriales y pisos de hormigón.
 
-Le brindamos a nuestros clientes el asesoramiento y las herramientas
-necesarias para poder concretar sus proyectos.
+    <!-- Primary Meta Tags -->
+    <title>Hormetec | Obras, proyectos y construcción</title>
+    <meta name="title" content="Hormetec | Obras, proyectos y construcción"/>
+    <meta name="description"
+          content="HORMETEC surge de años de experiencia en la construcción de naves industriales y pisos de hormigón. Le brindamos a nuestros clientes el asesoramiento y las herramientas necesarias para poder concretar sus proyectos."/>
 
-Le brindamos a nuestros clientes el asesoramiento y las herramientas necesarias para poder concretar sus proyectos." />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://hormetec.com"/>
+    <meta property="og:title" content="Hormetec | Obras, proyectos y construcción"/>
+    <meta name="og:description"
+          content="HORMETEC surge de años de experiencia en la construcción de naves industriales y pisos de hormigón. Le brindamos a nuestros clientes el asesoramiento y las herramientas necesarias para poder concretar sus proyectos."/>
+    <meta property="og:image" content="assets/hormetec_logo_intro.png"/>
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://hormetec.com" />
-<meta property="og:title" content="Hormetec | Obras, proyectos y construcción" />
-<meta property="og:description" content="HORMETEC surge de años de experiencia en la construcción de naves industriales y pisos de hormigón.
-
-Le brindamos a nuestros clientes el asesoramiento y las herramientas
-necesarias para poder concretar sus proyectos.
-
-Le brindamos a nuestros clientes el asesoramiento y las herramientas necesarias para poder concretar sus proyectos." />
-<meta property="og:image" content="assets/hormetec_logo_intro.png" />
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://hormetec.com" />
-<meta property="twitter:title" content="Hormetec | Obras, proyectos y construcción" />
-<meta property="twitter:description" content="HORMETEC surge de años de experiencia en la construcción de naves industriales y pisos de hormigón.
-
-Le brindamos a nuestros clientes el asesoramiento y las herramientas
-necesarias para poder concretar sus proyectos.
-
-Le brindamos a nuestros clientes el asesoramiento y las herramientas necesarias para poder concretar sus proyectos." />
-<meta property="twitter:image" content="assets/hormetec_logo_intro.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:url" content="https://hormetec.com"/>
+    <meta property="twitter:title" content="Hormetec | Obras, proyectos y construcción"/>
+    <meta property="twitter:description"
+          content="HORMETEC surge de años de experiencia en la construcción de naves industriales y pisos de hormigón. Le brindamos a nuestros clientes el asesoramiento y las herramientas necesarias para poder concretar sus proyectos."/>
+    <meta property="twitter:image" content="assets/hormetec_logo_intro.png"/>
 
 
-  </head>
-  <body>
-    <!-- Comienzo de de Intro -->
-    <div id="intro">
-      <img src="assets/hormetec_logo_intro.png" alt="Intro Image" id="intro-image" />
-    </div>
-    <div id="content" style="display: none">
-      <!-- Fin de Intro -->
-    </div>
-    <!-- Inicio sección Encabezado + Slider -->
-    <nav class="navbar hidden" id="nav">
-      <div class="navbar-logo">
+</head>
+<body>
+<!-- Comienzo de Intro -->
+<div id="intro">
+    <img src="assets/hormetec_logo_intro.png" alt="Intro Image" id="intro-image"/>
+</div>
+<div id="content" style="display: none">
+    <!-- Fin de Intro -->
+</div>
+<!-- Inicio sección Encabezado + Slider -->
+<nav class="navbar hidden" id="nav">
+    <div class="navbar-logo">
         <a href="https://hormetec.com">
-          <img src="./assets/hormetec-logo.png" alt="Logo" class="logo" />
+            <img src="./assets/hormetec-logo.png" alt="Logo" class="logo"/>
         </a>
-      </div>
-      <div class="navbar-hamburger">
-        <img src="assets/menu.png" alt="Menú" class="hamburger-icon" />
-      </div>
-      <div class="navbar-items">
+    </div>
+    <div class="navbar-hamburger">
+        <img src="assets/menu.png" alt="Menú" class="hamburger-icon"/>
+    </div>
+    <div class="navbar-items">
         <a href="#nosotros">NOSOTROS</a>
         <a href="#servicios">SERVICIOS</a>
         <a href="#productos">PRODUCTOS</a>
         <a href="#contacto">CONTACTO</a>
-      </div>
-    </nav>
-    <section class="slide row col 12">
-      <div
-        id="carouselExampleAutoplaying"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
+    </div>
+</nav>
+<section class="slide row col 12">
+    <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide"
+            data-bs-ride="carousel"
+    >
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/slide1.jpg" class="d-block w-100" alt="slide1" />
-          </div>
-          <div class="carousel-item">
-            <img src="assets/slide2.jpg" class="d-block w-100" alt="slide2" />
-          </div>
-          <div class="carousel-item">
-            <img src="assets/slide3.png" class="d-block w-100" alt="slide3" />
-          </div>
+            <div class="carousel-item active">
+                <img src="assets/slide1.jpg" class="d-block w-100" alt="slide1"/>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/slide2.jpg" class="d-block w-100" alt="slide2"/>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/slide3.png" class="d-block w-100" alt="slide3"/>
+            </div>
         </div>
         <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior </span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior </span>
         </button>
         <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
         </button>
-      </div>
-    </section>
-    <div class="scroll-up-arrow hidden">
-      <a href="#nav">
+    </div>
+</section>
+<div class="scroll-up-arrow hidden">
+    <a href="#nav">
         &#9650;
-      </a>
-    </div>
-    <div class="whatsapp-icon hidden">
-      <a href="https://wa.link/izdao8" target="_blank">
-        <img src="./assets/whatsapp-web.png" alt="WhatsApp" />
-      </a>
-    </div>
-    
-      
-    </div>
-    <!-- Fin sección Encabezado + Slider -->
+    </a>
+</div>
+<div class="whatsapp-icon hidden">
+    <a href="https://wa.link/izdao8" target="_blank">
+        <img src="./assets/whatsapp-web.png" alt="WhatsApp"/>
+    </a>
+</div>
 
-    <!-- Inicio sección Nosotros -->
-    <div class="section-nosotros" id="nosotros">
-      <h1 class="title-section" data-aos="fade-up">NOSOTROS</h1>
-      <div class="nosotros-content">
+<!-- Fin sección Encabezado + Slider -->
+
+<!-- Inicio sección Nosotros -->
+<div class="section-nosotros" id="nosotros">
+    <h1 class="title-section" data-aos="fade-up">NOSOTROS</h1>
+    <div class="nosotros-content">
         <div class="text-section-nosotros" data-aos="fade-right">
-          <p>
-            HORMETEC surge de años de experiencia en la construcción de naves
-            industriales y pisos de hormigón. <br />
-            <br />
-            Le brindamos a nuestros clientes el asesoramiento y las herramientas
-            necesarias para poder concretar sus proyectos. <br />
-            <br />
-            Le brindamos a nuestros clientes el asesoramiento y las herramientas
-            necesarias para poder concretar sus proyectos.Le brindamos a nuestros clientes el asesoramiento y las herramientas
-            necesarias para poder concretar sus proyectos.
-          </p>
+            <p>
+                HORMETEC surge de años de experiencia en la construcción de naves
+                industriales y pisos de hormigón. <br/>
+                <br/>
+                Brindándole a nuestros clientes el asesoramiento y las herramientas
+                necesarias para poder concretar sus proyectos. <br/>
+                <br/>
+                Trabajando en conjunto con las principales marcas del país y la calidad de sus productos.
+            </p>
         </div>
         <div class="img-section-nosotros" data-aos="fade-left">
-          <img src="assets/img-nosotros.jpg" alt="Nosotros" />
+            <img src="assets/img-nosotros.jpg" alt="Nosotros"/>
         </div>
-      </div>
     </div>
-    <!-- Fin sección Nosotros -->
+</div>
+<!-- Fin sección Nosotros -->
 
-     <!-- Inicio sección Nuestros Servicios -->
-    <div class="section-nuestros-servicios" id="servicios">
-        <h1 class="title-section" data-aos="fade-up" >
-            NUESTROS SERVICIOS
-        </h1>
-        <div class="nuestros-servicios-content">
-          <div class="bloque" data-aos="flip-left">
+<!-- Inicio sección Nuestros Servicios -->
+<div class="section-nuestros-servicios" id="servicios">
+    <h1 class="title-section" data-aos="fade-up">
+        NUESTROS SERVICIOS
+    </h1>
+    <div class="nuestros-servicios-content">
+        <div class="bloque" data-aos="flip-left">
             <img src="assets/servicios0.jpeg" alt="Imagen 0">
             <p class="info">Movimiento de Suelo</p>
             <button class="ver-mas-btn">Ver más</button>
         </div>
         <div class="modal">
-          <div class="modal-contenido">
-              <span class="cerrar">&times;</span>
-              <p>Contamos con las maquinarias y personal necesario para brindar este servicio a nuestros clientes</p>
-          </div>
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <p>Contamos con las maquinarias y personal necesario para brindar este servicio a nuestros clientes</p>
+            </div>
         </div>
-            <div class="bloque" data-aos="flip-left">
-                <img src="assets/servicios1.jpg" alt="Imagen 1">
-                <p class="info">Pisos de Hormigón</p>
-                <button class="ver-mas-btn">Ver más</button>
+        <div class="bloque" data-aos="flip-left">
+            <img src="assets/servicios1.jpg" alt="Imagen 1">
+            <p class="info">Pisos de Hormigón</p>
+            <button class="ver-mas-btn">Ver más</button>
+        </div>
+        <div class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <p>Pisos de hormigón llaneado mecánicamente con helicóptero en obra interior y exterior.<br>
+                    Ejecutamos obras de uso comercial, industrial y residencial, realizando un piso de hormigón
+                    resistente con la terminación solicitada por cada uno de nuestros clientes.</p>
             </div>
-            <div class="modal">
-              <div class="modal-contenido">
-                  <span class="cerrar">&times;</span>
-                  <p>Pisos de hormigón llaneado mecánicamente con helicóptero en obra interior y exterior.<br>
-                  Ejecutamos obras de uso comercial, industrial y residencial, realizando un piso de hormigón resistente con la terminación solicitada por cada uno de nuestros clientes.</p>
-              </div>
+        </div>
+        <div class="bloque" data-aos="flip-right">
+            <img src="assets/servicios2.webp" alt="Imagen 2">
+            <p class="info">Pisos Industriales</p>
+            <button class="ver-mas-btn">Ver más</button>
+        </div>
+        <div class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <p>Según la necesidad del cliente, se realizan aplicaciones de pisos con revestimiento epoxi o
+                    poliuretánico: evaluando la resistencia necesaria en cada obra.</p>
             </div>
-            <div class="bloque" data-aos="flip-right">
-                <img src="assets/servicios2.webp" alt="Imagen 2">
-                <p class="info">Pisos Industriales</p>
-                <button class="ver-mas-btn">Ver más</button>                
-            </div>
-            <div class="modal">
-              <div class="modal-contenido">
-                  <span class="cerrar">&times;</span>
-                  <p>Según la necesidad del cliente, se realizan aplicaciones de pisos con revestimiento epoxi o poliuretánico: evaluando la resistencia necesaria en cada obra.</p>
-              </div>
-          </div>
-            <div class="bloque" data-aos="flip-left">
-                <img src="assets/servicios3.jpg" alt="Imagen 3">
-                <p class="info">Naves Industriales</p>
-                <button class="ver-mas-btn">Ver más</button>
-            </div>
-            <div class="modal">
-              <div class="modal-contenido">
-                  <span class="cerrar">&times;</span>
-                  <p>Somos especialistas en la planificación y construcción de naves industriales. <br>
+        </div>
+        <div class="bloque" data-aos="flip-left">
+            <img src="assets/servicios3.jpg" alt="Imagen 3">
+            <p class="info">Naves Industriales</p>
+            <button class="ver-mas-btn">Ver más</button>
+        </div>
+        <div class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <p>Somos especialistas en la planificación y construcción de naves industriales. <br>
                     Realizamos el proyecto según la necesidad de cada uno de nuestros clientes y su negocio.</p>
-              </div>
-          </div>
-            <div class="bloque" data-aos="flip-right">
-                <img src="assets/servicios4.jpg" alt="Imagen 4">
-                <p class="info">Montaje de Estructuras</p>
-                <button class="ver-mas-btn">Ver más</button>
             </div>
-            <div class="modal">
-              <div class="modal-contenido">
-                  <span class="cerrar">&times;</span>
-                  <p>Nos dedicamos al montaje de estructuras metálicas de galpones y tinglados,
-              trabajando con nuestros clientes en su proyecto.</p>
-              </div>
-          </div>
-            <div class="bloque" data-aos="flip-left">
-                <img src="assets/servicios5.jpg" alt="Imagen 5">
-                <p class="info">Revestimientos</p>
-                <button class="ver-mas-btn">Ver más</button>
+        </div>
+        <div class="bloque" data-aos="flip-right">
+            <img src="assets/servicios4.jpg" alt="Imagen 4">
+            <p class="info">Montaje de Estructuras</p>
+            <button class="ver-mas-btn">Ver más</button>
+        </div>
+        <div class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <p>Nos dedicamos al montaje de estructuras metálicas de galpones y tinglados,
+                    trabajando con nuestros clientes en su proyecto.</p>
             </div>
-            <div class="modal">
-              <div class="modal-contenido">
-                  <span class="cerrar">&times;</span>
-                  <p>Presupuestos a medida con la previa evaluación de cada piso. <br>
+        </div>
+        <div class="bloque" data-aos="flip-left">
+            <img src="assets/servicios5.jpg" alt="Imagen 5">
+            <p class="info">Revestimientos</p>
+            <button class="ver-mas-btn">Ver más</button>
+        </div>
+        <div class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <p>Presupuestos a medida con la previa evaluación de cada piso. <br>
                     Realizamos el procedimiento de limpieza con los productos necesarios según el estado del piso.</p>
-              </div>
-          </div>
-            <div class="bloque" data-aos="flip-right">
-                <img src="assets/servicios6.jpg" alt="Imagen 6">
-                <p class="info">Lavado de Pisos Industriales</p>
-                <button class="ver-mas-btn">Ver más</button>
             </div>
-            <div class="modal">
-              <div class="modal-contenido">
-                  <span class="cerrar">&times;</span>
-                  <p>Presupuestos a medida con la previa evaluación de cada piso. <br>
+        </div>
+        <div class="bloque" data-aos="flip-right">
+            <img src="assets/servicios6.jpg" alt="Imagen 6">
+            <p class="info">Lavado de Pisos Industriales</p>
+            <button class="ver-mas-btn">Ver más</button>
+        </div>
+        <div class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <p>Presupuestos a medida con la previa evaluación de cada piso. <br>
                     Realizamos el procedimiento de limpieza con los productos necesarios según el estado del piso.</p>
-              </div>
-          </div>
-            <div class="bloque" data-aos="flip-left">
-                <img src="assets/servicios7.webp" alt="Imagen 7">
-                <p class="info">Reparación de Pisos Industriales</p>
-                <button class="ver-mas-btn">Ver más</button>
             </div>
-            <div class="modal">
-              <div class="modal-contenido">
-                  <span class="cerrar">&times;</span>
-                  <p>Recuperamos pisos de hormigón donde se necesita reparación estructural. <br>
+        </div>
+        <div class="bloque" data-aos="flip-left">
+            <img src="assets/servicios7.webp" alt="Imagen 7">
+            <p class="info">Reparación de Pisos Industriales</p>
+            <button class="ver-mas-btn">Ver más</button>
+        </div>
+        <div class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <p>Recuperamos pisos de hormigón donde se necesita reparación estructural. <br>
                     Reparamos con morteros y autonivelantes de las primeras líneas del país,
                     logrando todas las cualidades del piso original.</p>
-              </div>
-          </div>
-          <div class="bloque" data-aos="flip-right">
+            </div>
+        </div>
+        <div class="bloque" data-aos="flip-right">
             <img src="assets/servicios8.jpg" alt="Imagen 8">
             <p class="info">Pulido de Hormigón y Mosaico</p>
             <button class="ver-mas-btn">Ver más</button>
         </div>
         <div class="modal">
-          <div class="modal-contenido">
-              <span class="cerrar">&times;</span>
-              <p>Un sistema de recuperación de suelo ampliamente utilizado, para espacios comerciales, industriales e incluso residenciales,
-                para superficies nuevas o antiguas.</p>
-          </div>
-      </div>
-      <div class="bloque" data-aos="flip-right">
-        <img src="assets/servicios9.jpg" alt="Imagen 9">
-        <p class="info">Diseño y Fabricación de Muebles Corporativos</p>
-        <button class="ver-mas-btn">Ver más</button>
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <p>Un sistema de recuperación de suelo ampliamente utilizado, para espacios comerciales, industriales e
+                    incluso residenciales,
+                    para superficies nuevas o antiguas.</p>
+            </div>
+        </div>
+        <div class="bloque" data-aos="flip-right">
+            <img src="assets/servicios9.jpg" alt="Imagen 9">
+            <p class="info">Diseño y Fabricación de Muebles Corporativos</p>
+            <button class="ver-mas-btn">Ver más</button>
+        </div>
+        <div class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <p>El diseño y fabricación de muebles corporativos es un servicio especializado que ofrece soluciones
+                    personalizadas para crear espacios de trabajo funcionales, cómodos y estéticamente atractivos. Este
+                    servicio abarca la creación de muebles a medida que se adaptan a las necesidades específicas de cada
+                    empresa, como escritorios, estanterías, archivadores, mesas de reuniones y elementos de
+                    almacenamiento. Los muebles corporativos son diseñados teniendo en cuenta la ergonomía, la
+                    optimización del espacio y la coherencia con la identidad corporativa, lo que permite que los
+                    ambientes laborales sean más eficientes y representativos de la marca. La fabricación se realiza con
+                    materiales de alta calidad, como maderas, metales y acabados modernos, garantizando durabilidad y
+                    resistencia al uso cotidiano. Además, se pueden incorporar tecnologías como sistemas de cableado
+                    integrado o soluciones modulares que faciliten la reorganización y expansión del mobiliario conforme
+                    evolucionan las necesidades de la empresa. Este servicio ayuda a transformar el ambiente de trabajo
+                    en un espacio que fomente la productividad, la colaboración y el bienestar de los empleados.</p>
+            </div>
+        </div>
+        <div class="bloque" data-aos="flip-right">
+            <img src="assets/servicios10.jpg" alt="Imagen 10">
+            <p class="info">Obras con Terrazo en todos los Ambientes</p>
+            <button class="ver-mas-btn">Ver más</button>
+        </div>
+        <div class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <p>Las obras con terrazo son una opción ideal para crear superficies duraderas y de alto rendimiento en
+                    una variedad de ambientes, tanto comerciales como residenciales. El terrazo es un material compuesto
+                    que se obtiene mezclando fragmentos de mármol, granito, vidrio u otros elementos decorativos, que se
+                    adhieren a una base de cemento. Esta mezcla se pule para conseguir una superficie suave, brillante y
+                    resistente.
+
+                    El terrazo es conocido por su durabilidad, resistencia al desgaste y facilidad de mantenimiento, lo
+                    que lo convierte en una excelente opción para áreas de alto tráfico, como pasillos, entradas,
+                    escaleras, oficinas y más. Además, se puede personalizar para lograr acabados y colores que se
+                    ajusten a las necesidades y estilo de cada proyecto.
+
+                    Este material es perfecto para obras de interiores y exteriores, ya que se adapta a diversas
+                    configuraciones, ofreciendo una estética única con sus patrones y texturas. Las obras con terrazo
+                    son especialmente apreciadas por su resistencia a manchas, humedad y productos químicos, lo que las
+                    hace perfectas para cocinas, baños, y otros entornos donde la funcionalidad y la estética deben ir
+                    de la mano.
+
+                    Además, las obras de terrazo no solo brindan un acabado hermoso, sino que también representan una
+                    opción sostenible, ya que puede ser elaborado con materiales reciclados, lo que contribuye a la
+                    reducción de residuos y al cuidado del medio ambiente.</p>
+            </div>
+        </div>
     </div>
-    <div class="modal">
-      <div class="modal-contenido">
-          <span class="cerrar">&times;</span>
-          <p>El diseño y fabricación de muebles corporativos es un servicio especializado que ofrece soluciones personalizadas para crear espacios de trabajo funcionales, cómodos y estéticamente atractivos. Este servicio abarca la creación de muebles a medida que se adaptan a las necesidades específicas de cada empresa, como escritorios, estanterías, archivadores, mesas de reuniones y elementos de almacenamiento. Los muebles corporativos son diseñados teniendo en cuenta la ergonomía, la optimización del espacio y la coherencia con la identidad corporativa, lo que permite que los ambientes laborales sean más eficientes y representativos de la marca. La fabricación se realiza con materiales de alta calidad, como maderas, metales y acabados modernos, garantizando durabilidad y resistencia al uso cotidiano. Además, se pueden incorporar tecnologías como sistemas de cableado integrado o soluciones modulares que faciliten la reorganización y expansión del mobiliario conforme evolucionan las necesidades de la empresa. Este servicio ayuda a transformar el ambiente de trabajo en un espacio que fomente la productividad, la colaboración y el bienestar de los empleados.</p>
-      </div>
-  </div>
-  <div class="bloque" data-aos="flip-right">
-    <img src="assets/servicios10.jpg" alt="Imagen 10">
-    <p class="info">Obras con Terrazo en todos los Ambientes</p>
-    <button class="ver-mas-btn">Ver más</button>
 </div>
-<div class="modal">
-  <div class="modal-contenido">
-      <span class="cerrar">&times;</span>
-      <p>Las obras con terrazo son una opción ideal para crear superficies duraderas y de alto rendimiento en una variedad de ambientes, tanto comerciales como residenciales. El terrazo es un material compuesto que se obtiene mezclando fragmentos de mármol, granito, vidrio u otros elementos decorativos, que se adhieren a una base de cemento. Esta mezcla se pule para conseguir una superficie suave, brillante y resistente.
+<!-- Fin sección Nuestros servicios -->
 
-        El terrazo es conocido por su durabilidad, resistencia al desgaste y facilidad de mantenimiento, lo que lo convierte en una excelente opción para áreas de alto tráfico, como pasillos, entradas, escaleras, oficinas y más. Además, se puede personalizar para lograr acabados y colores que se ajusten a las necesidades y estilo de cada proyecto.
-        
-        Este material es perfecto para obras de interiores y exteriores, ya que se adapta a diversas configuraciones, ofreciendo una estética única con sus patrones y texturas. Las obras con terrazo son especialmente apreciadas por su resistencia a manchas, humedad y productos químicos, lo que las hace perfectas para cocinas, baños, y otros entornos donde la funcionalidad y la estética deben ir de la mano.
-        
-        Además, las obras de terrazo no solo brindan un acabado hermoso, sino que también representan una opción sostenible, ya que puede ser elaborado con materiales reciclados, lo que contribuye a la reducción de residuos y al cuidado del medio ambiente.</p>
-  </div>
+<!-- Inicio sección Productos -->
+<section class="product-section" id="productos">
+    <h1 class="title-section" data-aos="fade-up">NUESTROS PROVEEDORES</h1>
+    <div class="slider-products">
+        <button class="slider-button prev" onclick="moveSlide(-1)">
+            &#10094;
+        </button>
+        <div class="slider-wrapper">
+            <div class="slider-items">
+                <div class="slider-item">
+                    <div class="image-container">
+                        <img src="assets/p0.jpg" alt="Producto 0"/>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="image-container">
+                        <img src="assets/p1.png" alt="Producto 1"/>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="image-container">
+                        <img src="assets/p3.png" alt="Producto 3"/>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="image-container">
+                        <img src="assets/p4.jpg" alt="Producto 4"/>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="image-container">
+                        <img src="assets/p6.png" alt="Producto 6"/>
+                    </div>
+                </div>
+                <!-- Agrega más productos aquí -->
+            </div>
+        </div>
+        <button class="slider-button next" onclick="moveSlide(1)">
+            &#10095;
+        </button>
+    </div>
+    <!-- Tarjetas de productos para pantallas móviles -->
+    <div class="product-cards">
+        <div class="product-card">
+            <img src="assets/p0.jpg" alt="Producto 0"/>
+        </div>
+        <div class="product-card">
+            <img src="assets/p1.png" alt="Producto 1"/>
+        </div>
+        <div class="product-card">
+            <img src="assets/p3.png" alt="Producto 3"/>
+        </div>
+        <div class="product-card">
+            <img src="assets/p4.jpg" alt="Producto 4"/>
+        </div>
+        <div class="product-card">
+            <img src="assets/p6.png" alt="Producto 6"/>
+        </div>
+    </div>
+</section>
+<!-- Fin sección Productos -->
+
+<!-- Inicio sección Aliados -->
+<div class="section-aliados" id="aliados">
+    <h1 class="title-section" id="title-section-aliados" data-aos="fade-up">ALIADOS</h1>
+    <div class="aliados-content">
+        <div class="card">
+            <a href="https://www.instagram.com/pimux_ok" target="_blank">
+                <img src="assets/aliados01.jpg" alt="Aliado 1">
+            </a>
+            <div class="card-content">
+                <h3>PIMUX</h3>
+                <p>
+                    El terrazo es un material que se puede aplicar directamente in situ para revestir paredes,
+                    muebles, mesadas, etc., dándole cualquier tipo de forma y uso. En Pimux nos comprometemos
+                    a asistirte en la búsqueda de ese toque original para tu proyecto.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="https://www.instagram.com/idealhome.ar/" target="_blank">
+                <img src="assets/aliados02.jpg" alt="Aliado 2">
+            </a>
+            <div class="card-content">
+                <h3>IDEAL HOME</h3>
+                <p>
+                    En Ideal Home nos dedicamos a la fabricación de muebles a medida. Trabajamos con melamina y
+                    enchapados de primera calidad, combinando funcionalidad y diseño para transformar los lugares
+                    en espacios únicos.
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
-        </div>
-    </div>
-    <!-- Fin sección Nuestros servicios -->
 
-    <!-- Inicio sección Productos -->
-    <section class="product-section" id="productos">
-      <h1 class="title-section" data-aos="fade-up">NUESTROS PROVEEDORES</h1>
-      <div class="slider-products">
-          <button class="slider-button prev" onclick="moveSlide(-1)">
-              &#10094;
-          </button>
-          <div class="slider-wrapper">
-              <div class="slider-items">
-                  <div class="slider-item">
-                      <div class="image-container">
-                          <img src="assets/p0.jpg" alt="Producto 0" />
-                      </div>
-                  </div>
-                  <div class="slider-item">
-                      <div class="image-container">
-                          <img src="assets/p1.png" alt="Producto 1" />
-                      </div>
-                  </div>
-                  <div class="slider-item">
-                      <div class="image-container">
-                          <img src="assets/p3.png" alt="Producto 3" />
-                      </div>
-                  </div>
-                  <div class="slider-item">
-                      <div class="image-container">
-                          <img src="assets/p4.jpg" alt="Producto 4" />
-                      </div>
-                  </div>
-                  <div class="slider-item">
-                      <div class="image-container">
-                          <img src="assets/p6.png" alt="Producto 6" />
-                      </div>
-                  </div>
-                  <!-- Agrega más productos aquí -->
-              </div>
-          </div>
-          <button class="slider-button next" onclick="moveSlide(1)">
-              &#10095;
-          </button>
-      </div>
-<!-- Tarjetas de productos para pantallas móviles -->
-<div class="product-cards">
-  <div class="product-card">
-    <img src="assets/p0.jpg" alt="Producto 0" />
-  </div>
-  <div class="product-card">
-    <img src="assets/p1.png" alt="Producto 1" />
-  </div>
-  <div class="product-card">
-    <img src="assets/p3.png" alt="Producto 3" />
-  </div>
-  <div class="product-card">
-    <img src="assets/p4.jpg" alt="Producto 4" />
-  </div>
-  <div class="product-card">
-    <img src="assets/p6.png" alt="Producto 6" />
-  </div>
-  </section>
-    <!-- Fin sección Productos -->
 
-    <!-- Inicio sección Aliados -->
-    <div class="section-aliados" id="aliados">
-      <h1 class="title-section" id="title-section-aliados" data-aos="fade-up">ALIADOS</h1>
-      <div class="aliados-content">
-        <div class="card">
-          <a href="https://www.instagram.com/pimux_ok" target="_blank">
-            <img src="assets/aliados01.jpg" alt="Aliado 1">
-          </a>
-          <div class="card-content">
-            <h3>PIMUX</h3>
-            <p>
-              El terrazo es un material que se puede aplicar directamente in situ para revestir paredes,
-              muebles, mesadas, etc., dándole cualquier tipo de forma y uso. En Pimux nos comprometemos
-              a asistirte en la búsqueda de ese toque original para tu proyecto.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <a href="https://www.instagram.com/idealhome.ar/" target="_blank">
-            <img src="assets/aliados02.jpg" alt="Aliado 2">
-          </a>
-          <div class="card-content">
-            <h3>IDEAL HOME</h3>
-            <p>
-              En Ideal Home nos dedicamos a la fabricación de muebles a medida. Trabajamos con melamina y
-              enchapados de primera calidad, combinando funcionalidad y diseño para transformar los lugares
-              en espacios únicos.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-
-    <!-- Inicio sección Contacto -->
-    <section class="contact-section" id="contacto">
-      <h1 class="title-section" data-aos="fade-up">CONTACTO</h1>
-      <div class="box-contact" data-aos="fade-up">
+<!-- Inicio sección Contacto -->
+<section class="contact-section" id="contacto">
+    <h1 class="title-section" data-aos="fade-up">CONTACTO</h1>
+    <div class="box-contact" data-aos="fade-up">
         <div class="row-contact">
-          <div class="first-row-contact">
-            <h3>ASESORATE CON NOSOTROS</h3>
-            <p>Envianos tu consulta por Whatsapp</p>
-          </div>
-          <div class="second-row-contact">
-            <a href="https://wa.link/izdao8" class="button-contact" target="_blank">Escribinos</a>
-          </div>
+            <div class="first-row-contact">
+                <h3>ASESORATE CON NOSOTROS</h3>
+                <p>Envianos tu consulta por Whatsapp</p>
+            </div>
+            <div class="second-row-contact">
+                <a href="https://wa.link/izdao8" class="button-contact" target="_blank">Escribinos</a>
+            </div>
         </div>
-      </div>
-      <!-- Inicio sección Formulario -->
-      <div class="form-contact" data-aos="fade-up">
+    </div>
+    <!-- Inicio sección Formulario -->
+    <div class="form-contact" data-aos="fade-up">
         <h1 class="title-form" data-aos="fade-up">ENVIANOS TU CONSULTA </h1>
         <div class="form-container" data-aos="fade-right">
-          <form>
-            <div class="form-group">
-              <label for="name">Nombre y Apellido</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Nombre y Apellido"
-              />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-              />
-            </div>
-            <div class="form-group">
-              <label for="subject">Asunto</label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Asunto"
-              />
-            </div>
-            <div class="form-group">
-              <label for="message">Mensaje</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Escriba aquí su consulta"
-              ></textarea>
-            </div>
-            <p id="message-error" style="display: none; color: red;"></p>
-            <div class="form-group">
-              <button type="button" id="contact-form-send">Enviar</button>
-            </div>
-          </form>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre y Apellido</label>
+                    <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Nombre y Apellido"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Email"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="subject">Asunto</label>
+                    <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Asunto"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Escriba aquí su consulta"
+                    ></textarea>
+                </div>
+                <p id="message-error" style="display: none; color: red;"></p>
+                <div class="form-group">
+                    <button type="button" id="contact-form-send">Enviar</button>
+                </div>
+            </form>
         </div>
-      </div>
-      <!-- Fin sección Formulario -->
+    </div>
+    <!-- Fin sección Formulario -->
 
-      <!-- Inicio sección Mapa -->
-      <div class="maps" data-aos="zoom-in" id="maps">
-        <p><iframe id="map-canvas" class="map_part" width="100%"  height="400"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=Amancio Alacorta 240 - Boulogne&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">Powered by <a href="https://www.googlemapsgenerator.com">how to embed google maps</a> and <a href="https://evfactory.se/produkt/defa-power-22kw/">defa power</a></iframe></p>
-      </div>
-      <!-- Fin sección Mapa -->
-    </section>
-    <footer class="footer-section">
-      <div class="row-footer">
+    <!-- Inicio sección Mapa -->
+    <div class="maps" data-aos="zoom-in" id="maps">
+        <p>
+            <iframe id="map-canvas" class="map_part" width="100%" height="400"
+                    src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=Amancio Alacorta 240 - Boulogne&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+        </p>
+    </div>
+    <!-- Fin sección Mapa -->
+</section>
+<footer class="footer-section">
+    <div class="row-footer">
         <div class="first-row-footer">
-          <h4 class="title-footer">Datos de contacto</h4>
-          <div class="footer-date">
-            <div class="footer-date-whatsapp">
-              <a href="https://wa.link/izdao8" target="_blank">
-              <img
-                class="icon-footer"
-                src="assets/whatsapp.png"
-                alt="whatsapp"
-              /></a>
-              <p>+54 9 11 3373 4964</p>
+            <h4 class="title-footer">Datos de contacto</h4>
+            <div class="footer-date">
+                <div class="footer-date-whatsapp">
+                    <a href="https://wa.link/izdao8" target="_blank">
+                        <img
+                                class="icon-footer"
+                                src="assets/whatsapp.png"
+                                alt="whatsapp"
+                        /></a>
+                    <p>+54 9 11 3373 4964</p>
+                </div>
+                <div class="footer-email">
+                    <img class="icon-footer" src="assets/email.png" alt="email"/>
+                    <p>
+                        <a href="mailto:compras@hormetec.com" style="text-decoration: none; color: inherit;">compras@hormetec.com</a><br>
+                        <a href="mailto:ventas@hormetec.com" style="text-decoration: none; color: inherit;">ventas@hormetec.com</a><br>
+                        <a href="mailto:administracion@hormetec.com" style="text-decoration: none; color: inherit;">administracion@hormetec.com</a>
+                    </p>
+                </div>
+                <div class="footer-date-ubication">
+                    <img class="icon-footer" src="assets/ubicacion.png" alt="ubicacion"/>
+                    <p>Av. Amancio Alcorta 240 - Boulogne</p>
+                </div>
             </div>
-            <div class="footer-email">
-              <img class="icon-footer" src="assets/email.png" alt="email" />
-              <p>
-                <a href="mailto:compras@hormetec.com" style="text-decoration: none; color: inherit;">compras@hormetec.com</a><br>
-                <a href="mailto:ventas@hormetec.com" style="text-decoration: none; color: inherit;">ventas@hormetec.com</a><br>
-                <a href="mailto:administracion@hormetec.com" style="text-decoration: none; color: inherit;">administracion@hormetec.com</a>
-              </p>              
-            </div>
-            <div class="footer-date-ubication">
-              <img class="icon-footer" src="assets/ubicacion.png" alt="ubicacion" />
-              <p>Av. Amancio Alcorta 240 - Boulogne</p>
-            </div>
-          </div>
         </div>
         <div class="second-row-footer">
-          <div class="footer-image-block">
-            <img
-              class="footer-main-image"
-              src="assets/hormetec-logo.png"
-              alt="footer image"
-            />
-          </div>
+            <div class="footer-image-block">
+                <img
+                        class="footer-main-image"
+                        src="assets/hormetec-logo.png"
+                        alt="footer image"
+                />
+            </div>
         </div>
-      </div>
-      <div class="footer-icons-block">
+    </div>
+    <div class="footer-icons-block">
         <a href="https://www.facebook.com/hormetec/" target="_blank" rel="noopener noreferrer">
-          <img class="footer-icon" src="assets/facebook.png" alt="icon1" />
+            <img class="footer-icon" src="assets/facebook.png" alt="icon1"/>
         </a>
         <a href="https://www.instagram.com/obrashormetec" target="_blank" rel="noopener noreferrer">
-          <img class="footer-icon" src="assets/instagram.png" alt="icon2" />
+            <img class="footer-icon" src="assets/instagram.png" alt="icon2"/>
         </a>
-      </div>
-      <div class="footer-credits">
+    </div>
+    <div class="footer-credits">
         <p>Upward Solutions ™ - Todos los derechos reservados</p>
-      </div>
-    </footer>
+    </div>
+</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="scripts/intro.js"></script>
-    <script src="scripts/slider.js"></script>
-    <script src="scripts/modals.js"></script>
-    <script src="scripts/scroll.js"></script>
-    <script src="scripts/send-mail.js"></script>
-    <script src="scripts/sliderProducts.js"></script>
-    <script src="scripts/humburguer-menu.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="scripts/intro.js"></script>
+<script src="scripts/modals.js"></script>
+<script src="scripts/send-mail.js"></script>
+<script src="scripts/sliderProducts.js"></script>
+<script src="scripts/humburguer-menu.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
 </html>
